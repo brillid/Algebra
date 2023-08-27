@@ -32,4 +32,3 @@ $racun->postaviStanje("10000");
 
 echo "Vlasnik računa je: " . $racun->dohvatiVlasnika() . "\n";
 echo "Stanje računa je: " . $racun->dohvatiStanje() . "\n";
-

@@ -18,7 +18,7 @@ class Kvadrad extends Oblik
 
     public function izracunajPovrsinu()
     {
-        return $this->duzinaStranice * $this->duzinaStranice;  
+        return $this->duzinaStranice * $this->duzinaStranice;
     }
 }
 
@@ -36,7 +36,7 @@ class Vozilo
 
     public function ubrzaj($vrijednost)
     {
-        $this->brzina+=$vrijednost;
+        $this->brzina += $vrijednost;
     }
 }
 
@@ -51,4 +51,3 @@ class Automobil1 extends Vozilo
 $auto = new Automobil1();
 $auto->ubrzaj(30);
 $auto->ispisiBrzinu();
-
