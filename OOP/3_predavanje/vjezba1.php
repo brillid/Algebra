@@ -14,7 +14,6 @@ abstract class Oblik66
 
 class Krug853 extends Oblik66
 {
-
     private $radijus;
 
     private $povrsina;

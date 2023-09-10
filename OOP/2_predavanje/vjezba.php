@@ -194,7 +194,7 @@ class Krug2 extends Oblik3
 {
     protected $radijus;
 
-    public function __construct($boja, $radijus) 
+    public function __construct($boja, $radijus)
     {
         parent::__construct($boja);
         $this->radijus = $radijus;
@@ -202,7 +202,7 @@ class Krug2 extends Oblik3
 
     public function izracunajPovrsinu()
     {
-        return pi() * pow($this->radijus, 2); 
+        return pi() * pow($this->radijus, 2);
     }
 
     public function prikaziDetalje()

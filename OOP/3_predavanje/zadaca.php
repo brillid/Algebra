@@ -21,7 +21,7 @@ class Zaposlenik
     {
         $this->ime = $ime;
         $this->prezime = $prezime;
-        $this->placa = $placa;   
+        $this->placa = $placa;
     }
 
     public function prikaziDetalje()
@@ -49,8 +49,7 @@ class Odjel
     {
         echo "Naziv odjela: $this->naziv, zaposlenici: \n";
 
-        foreach ($this->zaposlenici as $zaposlenik)
-        {
+        foreach ($this->zaposlenici as $zaposlenik) {
             $zaposlenik->prikaziDetalje();
         }
     }

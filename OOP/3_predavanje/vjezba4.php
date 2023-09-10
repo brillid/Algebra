@@ -42,8 +42,7 @@ class Kosarica
     {
         $ukupno = 0;
 
-        foreach ($this->proizvodi as $proizvod)
-        {
+        foreach ($this->proizvodi as $proizvod) {
             $ukupno = $ukupno + $proizvod->dohvatiCijenu();
         }
 
@@ -51,7 +50,7 @@ class Kosarica
     }
 }
 
-use \WebShop\Proizvod as WP;
+use WebShop\Proizvod as WP;
 
 $proizvod1 = new WP("Kruh", 1.1);
 $proizvod2 = new WP("Mlijeko", 1.00);

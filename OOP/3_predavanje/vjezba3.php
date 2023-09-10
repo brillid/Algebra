@@ -44,7 +44,6 @@ class Transakcija
 
 use Banka\Racun;
 
-
 $racun = new Racun(500);
 $racun->prikaziStanje();
 

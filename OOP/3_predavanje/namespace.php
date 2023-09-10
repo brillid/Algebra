@@ -20,7 +20,7 @@ class Krug3
     }
 }
 
-use \Matematika\Krug3 as M;
+use Matematika\Krug3 as M;
 
 $krug = new \Geometrija\Krug3();
 $krug = new M();
