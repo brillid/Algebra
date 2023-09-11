@@ -6,17 +6,11 @@ svojstvu objekta i izaziva iznimku ako takvo svojstvo ne postoji.
 */
 class Objektic
 {
-    
 }
 
-try
-{
+try {
     $objektic = new Objektic();
     echo $objektic->svojstvo;
-}
-
-catch (Error $e)
-{
+} catch (Error $e) {
     echo $e->getMessage();
 }
-
