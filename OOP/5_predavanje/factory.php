@@ -6,9 +6,9 @@ class UserFactory
     {
         switch ($userTypte) {
             case "admin": return new AdminUser();
-            break;
+                break;
             case "korisnik": return new RegularUser();
-            break;
+                break;
             default: throw new InvalidArgumentException("Nepoznati tip korisnika");
         }
     }
@@ -16,12 +16,10 @@ class UserFactory
 
 class AdminUser
 {
-    
 }
 
 class RegularUser
 {
-
 }
 
 $userFactory = new UserFactory();

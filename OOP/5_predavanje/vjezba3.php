@@ -2,7 +2,7 @@
 
 interface Vozilo43534
 {
-  public function Vozi();
+    public function Vozi();
 }
 
 class Hatchback implements Vozilo43534
@@ -25,4 +25,3 @@ class CarFactory
 {
     //switch
 }
-

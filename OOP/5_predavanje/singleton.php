@@ -7,7 +7,7 @@ class Singleton
     // privatni konstruktor za sprječavanje instanciranja objekta iz glavnog programa ili druge klase
     private function __construct()
     {
-        
+
     }
 
     public static function getInstance()
@@ -27,4 +27,3 @@ class Singleton
 
 $signleton = Singleton::getInstance();
 $signleton->radiNesto();
-

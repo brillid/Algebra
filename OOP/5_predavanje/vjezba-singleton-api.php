@@ -37,7 +37,7 @@ class WeatherApi
         } else {
             throw new Exception("Došlo je do pogreške kod dohvata podataka");
         }
-    }   
+    }
 }
 
 
