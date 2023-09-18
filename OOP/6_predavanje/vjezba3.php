@@ -30,7 +30,7 @@ class NasIterator implements Iterator
     {
         $this->pozicija++;
     }
-    
+
     public function rewind(): void
     {
         $this->pozicija = 0;

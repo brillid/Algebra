@@ -28,7 +28,7 @@ class BedIterator implements Iterator
     {
         $this->pozicija++;
     }
-    
+
     //rewind
     public function rewind(): void
     {

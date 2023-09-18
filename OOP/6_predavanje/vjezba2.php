@@ -30,7 +30,7 @@ class NasIterator implements Iterator
     {
         $this->pozicija++;
     }
-    
+
     public function rewind(): void
     {
         $this->pozicija = 0;
@@ -80,4 +80,3 @@ if ($iterator->valid()) {
 } else {
     echo "Iterator ne radi";
 }
-

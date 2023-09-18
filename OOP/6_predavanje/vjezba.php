@@ -28,7 +28,7 @@ class NasIterator implements Iterator
     {
         $this->pozicija++;
     }
-    
+
     public function rewind(): void
     {
         $this->pozicija = 0;
@@ -53,12 +53,12 @@ foreach($iterator2 as $key => $vrijednost) {
 }
 
 //proba
-echo $iterator2->rewind() . "\n"; 
-echo $iterator2->key() . "\n"; 
-echo $iterator2->current() . "\n"; 
-echo $iterator2->next() . "\n"; 
-echo $iterator2->key() . "\n"; 
-echo $iterator2->current() . "\n"; 
-echo $iterator2->next() . "\n"; 
-echo $iterator2->key() . "\n"; 
-echo $iterator2->current() . "\n"; 
+echo $iterator2->rewind() . "\n";
+echo $iterator2->key() . "\n";
+echo $iterator2->current() . "\n";
+echo $iterator2->next() . "\n";
+echo $iterator2->key() . "\n";
+echo $iterator2->current() . "\n";
+echo $iterator2->next() . "\n";
+echo $iterator2->key() . "\n";
+echo $iterator2->current() . "\n";
