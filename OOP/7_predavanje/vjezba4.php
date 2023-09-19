@@ -8,7 +8,6 @@ Ako korisnik pokuša iznajmiti nedostupnu knjigu, treba se generirati iznimka:
 
 class NedostupnaKnjigaException extends Exception
 {
-
 }
 
 class Knjiga984
