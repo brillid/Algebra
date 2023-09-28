@@ -3,7 +3,7 @@
 class Brojac
 {
     public static $broj = 0;
-    
+
     public function __construct()
     {
         self::$broj++;

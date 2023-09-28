@@ -5,7 +5,7 @@ class Brojac
     private static $instance;
 
     private static $broj;
-    
+
     public function __construct()
     {
         self::$broj++;

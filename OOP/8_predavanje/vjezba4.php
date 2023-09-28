@@ -25,14 +25,14 @@ class KolekcijaKnjiga implements Iterator
         $this->knjige[] = $knjiga;
     }
 
-    public function rewind() : void
+    public function rewind(): void
     {
         $this->trenutniKljuc = 0;
     }
 
     public function current()
     {
-        return $this->knjige[$this->trenutniKljuc];   
+        return $this->knjige[$this->trenutniKljuc];
     }
 
     public function key()
@@ -40,12 +40,12 @@ class KolekcijaKnjiga implements Iterator
         return $this->trenutniKljuc;
     }
 
-    public function next() : void
+    public function next(): void
     {
         $this->trenutniKljuc++;
     }
 
-    public function valid() : bool
+    public function valid(): bool
     {
         return isset($this->knjige[$this->trenutniKljuc]);
     }
@@ -59,10 +59,10 @@ $kolekcijaKnjiga->dodajKnjigu(new Knjiga("naslov2", "autor2", 2022));
 //izravno pozvati metodu rewind()
 $kolekcijaKnjiga->rewind(); //iterator se nalazi na početku (na nuli)
 
-while ($kolekcijaKnjiga->valid()){
+while ($kolekcijaKnjiga->valid()) {
     $trenutnaKnjiga = $kolekcijaKnjiga->current();
     $kljuc = $kolekcijaKnjiga->key();
 
-    echo "Knjiga " . ($kljuc+1) . ":" . $trenutnaKnjiga->naslov . "\n";
+    echo "Knjiga " . ($kljuc + 1) . ":" . $trenutnaKnjiga->naslov . "\n";
     $kolekcijaKnjiga->next();
 }

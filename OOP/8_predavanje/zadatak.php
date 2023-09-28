@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 
 // SQL upit za umetanje podataka
 $sqlInsert = "INSERT INTO knjiga (naslov, autor) VALUES ('The art of computer programming', 'Donald Knuth')";
-if ($conn->query($sqlInsert) === TRUE) {
+if ($conn->query($sqlInsert) === true) {
     echo "Podaci uspješno umetnuti. \n";
 } else {
     echo "Greška prilikom umetanja podataka: " . $conn->error . "\n";

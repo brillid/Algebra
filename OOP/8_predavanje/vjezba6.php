@@ -1,49 +1,59 @@
 <?php
 
 // Sučelje Observer
-interface Observer {
+interface Observer
+{
     public function update($stanje);
 }
 
 // Konkretni observer - EmailNotifikacija
-class EmailNotifikacija implements Observer {
+class EmailNotifikacija implements Observer
+{
     private $email;
 
-    public function __construct($email) {
+    public function __construct($email)
+    {
         $this->email = $email;
     }
 
-    public function update($stanje) {
+    public function update($stanje)
+    {
         echo "Slanje email notifikacije na adresu " . $this->email . ": Promjena stanja - " . $stanje . "\n";
     }
 }
 
 // Sučelje Subjekt
-interface Subjekt {
+interface Subjekt
+{
     public function registrirajObservera(Observer $observer);
     public function obavijestiObservatore($stanje);
 }
 
 // Konkretni subjekt - Proizvod
-class Proizvod implements Subjekt {
+class Proizvod implements Subjekt
+{
     private $stanje;
     private $observeri;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->observeri = array();
     }
 
-    public function registrirajObservera(Observer $observer) {
+    public function registrirajObservera(Observer $observer)
+    {
         $this->observeri[] = $observer;
     }
 
-    public function obavijestiObservatore($stanje) {
+    public function obavijestiObservatore($stanje)
+    {
         foreach ($this->observeri as $observer) {
             $observer->update($stanje);
         }
     }
 
-    public function promijeniStanje($stanje) {
+    public function promijeniStanje($stanje)
+    {
         $this->stanje = $stanje;
         $this->obavijestiObservatore($stanje);
     }

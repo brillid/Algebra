@@ -65,7 +65,7 @@ class BazaKnjigaIterator implements IteratorKnjiga
 class BazaKnjiznica implements IteratorKnjiga
 {
     private $iterator;
-    
+
     public function __construct($rezultat)
     {
         $this->iterator = new BazaKnjigaIterator($rezultat);
